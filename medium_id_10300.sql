@@ -35,5 +35,4 @@ FROM downloads
 WHERE
     non_paying_downloads > paying_downloads
 -- Per instructions: The output should be sorted by earliest date first.
-ORDER BY
-    date
+ORDER BY date
