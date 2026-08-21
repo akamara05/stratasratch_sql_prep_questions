@@ -1,5 +1,5 @@
 /* 
-Question: Find the customers with the highest daily total order cost between ** 2019-02-01 and 2019-05-01**. 
+Question: Find the customers with the highest daily total order cost between 2019-02-01 and 2019-05-01. 
 If a customer had more than one order on a certain day, sum the order costs on a daily basis. Output each 
 customer's first name, total cost of their items, and the date. If multiple customers tie for the highest daily 
 total on the same date, return all of them.
@@ -21,7 +21,7 @@ rankings AS (
 SELECT  
 t.*, 
 -- Used dense rank window function based on these instructions: 
--- *If multiple customers tie for the highest daily total on the same date, return all of them.*
+-- If multiple customers tie for the highest daily total on the same date, return all of them.
 DENSE_RANK() OVER (PARTITION BY order_date ORDER BY total_daily_cost DESC) AS ranking,
 c.first_name
 FROM customer_totals as t 
