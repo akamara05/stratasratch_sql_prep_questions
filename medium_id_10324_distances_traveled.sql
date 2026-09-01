@@ -1,4 +1,10 @@
--- consolidate necessary fields from both table 
+/* 
+Title: Distances Traveled
+
+Instructions: Find the top 10 users that have traveled the greatest distance. Output their id, name and a total distance traveled.
+*/
+
+-- Consolidate necessary fields from both tables.
 WITH base AS ( 
 SELECT 
 rides.user_id, 
