@@ -9,6 +9,7 @@ Your output should include the user_id, the session_date, the total number of or
 
 WITH Base AS 
 (SELECT
+-- Noted repeated session rows, so used DISTINCT to deduplicate session entries. 
 DISTINCT S.session_date, 
 S.user_id,
 O.order_date, 
