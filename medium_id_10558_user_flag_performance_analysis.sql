@@ -1,3 +1,14 @@
+/* 
+Title: User Flag Performance Analysis
+
+Instructions: A video platform's trust and safety team wants to measure how effective each user's flags are at surfacing content that 
+actually gets moderated. For each user who has had at least one flag reviewed by YouTube, determine the number of distinct 
+videos they flagged that had at least one YouTube-reviewed flag, and how many of those videos were ultimately removed.
+
+Output the user's first name, last name, the number of distinct flagged videos with at least one YouTube-reviewed flag, the 
+number of those videos that were ultimately removed, and the most recent review date among their reviewed flags.
+*/
+
 WITH Base AS ( 
 SELECT
 U.*, 
