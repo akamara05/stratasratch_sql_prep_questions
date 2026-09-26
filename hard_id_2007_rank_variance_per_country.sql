@@ -67,8 +67,7 @@ LEFT JOIN fb_active_users u USING(user_id)
 WHERE c.created_at BETWEEN '2019-12-01' AND '2020-02-01'
 GROUP BY 1,2 ),
 dec_ranked_comments AS(
-SELECT 
-DISTINCT country,
+SELECT DISTINCT country,
 month_start,
 total_comments,
 DENSE_RANK() OVER (ORDER BY total_comments DESC) AS dec_rank
