@@ -1,4 +1,6 @@
 /* 
+Instructions: This code doesn't return the expected result. Find what's wrong and fix it.
+
 Title: Rank Variance Per Country
 
 Question: Compare the total number of comments made by users in each country during December 2019 and January 2020.
@@ -7,8 +9,6 @@ For each month, rank countries by their total number of comments in descending o
 share the same rank, and the next rank should increase by one (without skipping numbers).
 
 Return the names of the countries whose rank improved from December to January (that is, their rank number became smaller).
-
-Instructions: This code doesn't return the expected result. Find what's wrong and fix it.
 */
 
 -- ORIGINAL SCRIPT
